@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Proiect_DAW.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: auto; padding: 10px; background-color: cornsilk;>
+            <div style="float: left">
+                <h2>My Bookmarking Site</h2>
+                 <div style="padding-top: 10px">
+            
+                     <asp:LoginView ID="LoginView1" runat="server">
+                         <AnonymousTemplate>
+                             nu esti logat&nbsp;
+                         </AnonymousTemplate>
+                         <LoggedInTemplate>
+                             Esti logat ca&nbsp;<asp:LoginName ID="LoginName1" runat="server" />
+                             &nbsp;&nbsp;&nbsp;
+                         </LoggedInTemplate>
+                         <RoleGroups>
+                             <asp:RoleGroup Roles="Admin">
+                                 <ContentTemplate>
+                                     ATENȚÎE!! Ești admin!
+                                 </ContentTemplate>
+                             </asp:RoleGroup>
+                         </RoleGroups>
+                     </asp:LoginView>
+            
+                     <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            
+                </div>
+            </div>
+            <div style="float: right">
+                
+            </div>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">    
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proiect_DAW.Admin
+namespace Proiect_DAW.Users
 {
 
 
-    public partial class UserMgmt
+    public partial class MyProfile
     {
     }
 }

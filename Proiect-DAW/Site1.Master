@@ -10,34 +10,42 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="width: auto; padding: 10px; background-color: cornsilk;>
-            <div style="float: left">
-                <h2>My Bookmarking Site</h2>
-                 <div style="padding-top: 10px">
+        <div style="width: auto; padding: 10px; background-color: cornsilk;">
             
+            
+                 <div style="padding-top: 10px; float: right;">
+                     <div>
+                            
                      <asp:LoginView ID="LoginView1" runat="server">
                          <AnonymousTemplate>
                              nu esti logat&nbsp;
                          </AnonymousTemplate>
                          <LoggedInTemplate>
+                             <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Users/MyProfile.aspx" runat="server" Text="Profilu' mieu" ForeColor="Black"></asp:HyperLink>
+                             <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Users/AddBookmark.aspx" runat="server" Text="Adaugî rețetî" ForeColor="Black"></asp:HyperLink>
                              Esti logat ca&nbsp;<asp:LoginName ID="LoginName1" runat="server" />
                              &nbsp;&nbsp;&nbsp;
                          </LoggedInTemplate>
                          <RoleGroups>
                              <asp:RoleGroup Roles="Admin">
                                  <ContentTemplate>
+                                     <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Admin/Management.aspx" runat="server" Text="Fii șmecher!" ForeColor="Black"></asp:HyperLink>
+                                     <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Users/MyProfile.aspx" runat="server" Text="Profilu' mieu" ForeColor="Black"></asp:HyperLink>
+                                     <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Users/AddBookmark.aspx" runat="server" Text="Adaugî rețetî" ForeColor="Black"></asp:HyperLink>
                                      ATENȚÎE!! Ești admin!
                                  </ContentTemplate>
                              </asp:RoleGroup>
                          </RoleGroups>
                      </asp:LoginView>
+            </div>
             
-                     <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                     <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="Page_Load" />
             
                 </div>
-            </div>
-            <div style="float: right">
-                
+            <div>
+                <h2>Rețeti veseli</h2>
+
+            
             </div>
         </div>
 

@@ -7,64 +7,46 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proiect_DAW.Users {
+namespace Proiect_DAW.Admin {
     
     
-    public partial class AddBookmark {
+    public partial class UserMgmt {
         
         /// <summary>
-        /// IdName control.
+        /// TextCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdName;
+        protected global::System.Web.UI.WebControls.TextBox TextCategory;
         
         /// <summary>
-        /// IdCategory control.
+        /// AddCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList IdCategory;
+        protected global::System.Web.UI.WebControls.Button AddCategory;
         
         /// <summary>
-        /// DefaultConnection control.
+        /// TextTag control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DefaultConnection;
+        protected global::System.Web.UI.WebControls.TextBox TextTag;
         
         /// <summary>
-        /// IdPhoto control.
+        /// AddTag control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload IdPhoto;
-        
-        /// <summary>
-        /// IdDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdDescription;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button AddTag;
         
         /// <summary>
         /// message control.

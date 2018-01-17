@@ -69,12 +69,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\UserMgmt.aspx" />
+    <Content Include="Admin\Management.aspx" />
     <Content Include="MyProfile.aspx" />
     <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Users\AddBookmark.aspx" />
+    <Content Include="Users\MyProfile.aspx" />
     <Content Include="Users\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,12 +95,12 @@
     <Content Include="login.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\UserMgmt.aspx.cs">
-      <DependentUpon>UserMgmt.aspx</DependentUpon>
+    <Compile Include="Admin\Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\UserMgmt.aspx.designer.cs">
-      <DependentUpon>UserMgmt.aspx</DependentUpon>
+    <Compile Include="Admin\Management.aspx.designer.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -139,6 +140,13 @@
     </Compile>
     <Compile Include="Users\AddBookmark.aspx.designer.cs">
       <DependentUpon>AddBookmark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
